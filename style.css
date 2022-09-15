@@ -1,0 +1,370 @@
+body,h1,h2,h3,h4,h5,h6,a,p,span,ul,li{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+/* Header Section CSS Start */
+.header-banner{}
+header{
+    background: linear-gradient(to right,#02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+header .menu{
+    text-align: end;
+}
+header .menu nav ul li{
+    display: inline-block;
+    position: relative;
+}
+header .menu nav ul li a {
+    display: inline-block;
+    color: #000;
+    font-weight: 500;
+    padding: 0 13px;
+    line-height: 65px;
+    position: relative;
+    transition: 0.3s;
+}
+header .menu nav ul li:hover >a{
+    color: #ffffff !important;
+}
+header .menu nav ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    height: 4px;
+    transform: scale(0);
+    transition: 0.5s;
+}
+header .menu nav ul li a:hover::after{
+    transform: scale(1);
+}
+header .menu nav ul ul li a:hover::after{
+    transform: scale(0);
+}
+header .menu nav ul li:nth-child(1) a{
+    color: #ffffff;
+}
+header .menu nav ul ul li:nth-child(1) a{
+    color: #000000;
+}
+
+header .menu nav ul ul li:nth-child(1) a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: #000 !important;
+    height: 4px;
+    transition: 0.5s;
+}
+header .menu nav ul li:nth-child(1) a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    height: 4px;
+    transition: 0.5s;
+}
+/* DropDown Section CSS Start */
+nav ul li ul{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 185px;
+    background: linear-gradient(to right,#02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+    padding: 0;
+    text-align: start;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    border-top: 1px solid #fff;
+}
+nav ul li ul li{
+    display: block !important;
+}
+nav ul li ul li a {
+    display: block !important;
+    padding: 0 20px!important;
+    border-bottom: 1px solid #fff;
+    color: #000;
+    transition: 0.3s;
+    line-height: 53px !important;
+}
+nav ul li ul li a:hover{
+    color: #13c5dd !important;
+}
+nav ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+/* DropDown Section CSS End */
+/* Header Section CSS End */
+/* Banner Section CSS Start */
+.banner{
+    background-image: linear-gradient(to right, #1CD8D2 0%, #93EDC7  51%, #1CD8D2  100%);
+}
+.banner-content {
+    margin-top: 205px;
+    padding-left: 125px;
+}
+.banner-content h1{
+    font: size 4.06rem;
+    line-height: 78px;
+    font-weight: 600;
+}
+.btn-1 {
+    background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display:inline-block;
+    border: none;
+  }
+
+  .btn-1:hover {
+    background-position: right center; 
+    color: #fff;
+  }
+/* Banner Section CSS End */
+/* Protien Section CSS Start */
+.protien{
+    background: #f8f8f8;
+    padding: 5rem 0;
+}
+.protien h2{
+    text-align: start;
+    padding-left: 4.375rem;
+    font-size: 2.5rem;
+    line-height: 2.1875rem;
+    font-weight: 600;
+    padding-bottom: 1.875rem;
+    color: #2e2d2d;
+}
+.protien-items h3{
+    font-size: 1.875rem;
+    line-height: 1.5625rem;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+.protien-items p{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #2e2d2d;
+    font-weight: 500;
+    padding-bottom: .9375rem;
+}
+.btn-3 {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    margin: 10px 83px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    border: none;
+}
+.btn-3:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+  }
+/* Protien Section CSS End */
+/* About Section CSS Start */
+.about{
+    padding: 4rem 0;
+    border-bottom: 1px solid #ddd;
+}
+.about-content {
+    margin-top: 10%;
+}
+.about-content h2{
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 2.1875rem;
+    font-weight: 600;
+    color: #2e2d2d;
+}
+.about-content p{
+    padding-bottom: 3.4375rem;
+    font-size: 1.0625rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: #2e2d2d;
+}
+.about-content button.btn-4{
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
+    margin: 10px;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    display: block;
+}
+/* About Section CSS End */
+/* Body Section CSS Start */
+.body{
+    padding-top: 1rem;
+    border-bottom: 2px solid #ddd;
+}
+.content-right {
+    margin-top: 6%;
+}
+.content-right h2 {
+    font-size: 4.375rem;
+    line-height: 5.625rem;
+    color: #2e2d2d;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+.content-right button.btn-5{
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    margin: 10px;
+    padding: 15px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    display: block;
+    border: none;
+}
+/* Body Section CSS End */
+/* Testimonial Section CSS Start */
+.testimonial{
+    padding: 3rem 0;
+}
+.test-content{
+    background-image: linear-gradient(to right, #136a8a 0%, #267871  51%, #136a8a );
+    padding: 3rem 1rem;
+    margin-top: 3.75rem;
+}
+.test-content h3 {
+    font-size: 25px;
+    margin-top: 22px;
+}
+.test-content p {
+    width: 80%;
+}
+/* Testimonial Section CSS End */
+/* Contact Section CSS start */
+.contact {
+    padding: 2rem 0;
+}
+.contact h2 {
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.contact form input {
+    border:none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 10px 0;
+}
+.contact form input::placeholder{
+    color: #000 !important;
+}
+.contact form textarea::placeholder{
+    color: #000 !important;
+}
+.contact form input:focus{
+    outline: none;
+}
+.contact form textarea:focus{
+    outline: none;
+}
+.contact form textarea {
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 0;
+    margin-top: 30px;
+}
+.contact form button.btn-6 {
+    background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%);
+    padding: 12px 65px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    display: inline-block;
+    border: none;
+}
+.contact form button.btn-6:hover{
+    background-position: right center; 
+    color: #fff;
+}      
+/* Contact Section CSS End */
+/* Footer Section CSS Start */
+footer{
+    background-image: linear-gradient(to right, #136a8a 0%, #267871  51%, #136a8a );
+    color: #fff;
+    padding: 2rem 0;
+}
+footer ul li a{
+    color: #fff !important;
+    display: inline-block;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+footer h3 {
+    margin-top: 10px;
+    margin-bottom: 31px;
+}
+footer .p-con{
+   text-align: start;
+   
+}
+footer .p-con p {
+    margin-top: 25px;
+    font-size: 18px;
+}
+footer .icon ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: end;
+    margin-top: 25px;
+}
+footer .icon ul li{
+    display: inline-block;
+}
+footer .icon ul li a{
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 15px;
+}
+/* Footer Section CSS End */
